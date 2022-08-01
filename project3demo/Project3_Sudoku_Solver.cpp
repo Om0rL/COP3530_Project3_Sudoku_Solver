@@ -7,8 +7,9 @@
 #include <GLES2/gl2.h>
 #endif
 #include <GLFW/glfw3.h>*/
-#include <iostream>
+//imgui stuff deleted because I didn't have enough time to implement the GUI.
 
+#include <iostream>
 #include "sudoku.h"
 #include "backtrack_solution.h"
 #include "backjump_leaf_solution.h"
@@ -123,7 +124,7 @@ void solve(DLX& DLX_solution, backjump_leaf_solution& BJ_solution, backtrack_sol
 			DLX_solution.set_sudoku(sudoku(clue));
 			DLX_solution.solve(config);
 		}
-		std::cout << std::endl << "Solved!";
+		std::cout << std::endl << "Solved!" << std::endl;
 	}
 }
 
